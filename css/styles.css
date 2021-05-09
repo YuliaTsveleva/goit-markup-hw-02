@@ -1,19 +1,21 @@
-:root{
---main-font:"Roboto", sans-serif;
---logo-font:"Raleway", sans-serif;
---accent-color:#2196f3;
---backlight-color:#188ce8;
---main-text-color:#757575;
---heading-color:#212121;
---dark-background-text-color:#ffffff;
---section-background-color:#2f303a;
---logo-color:#000000;
---footer-contacts-color: #ffffff99;
+:root {
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --backlight-color: #188ce8;
+  --main-text-color: #757575;
+  --heading-color: #212121;
+  --dark-background-text-color: #ffffff;
+  --section-background-color: #2f303a;
+  --logo-color: #000000;
+  --footer-contacts-color: #ffffff99;
+  --portfolio-buttons-backgrount-color: #f5f4fa;
 }
 
 body {
   font-family: var(--main-font);
   color: var(--main-text-color);
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -35,11 +37,10 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  }
+}
 
 .logo-studio {
-  color: var(--logo-color)
+  color: var(--logo-color);
 }
 
 .nav-link {
@@ -68,7 +69,8 @@ body {
   color: var(--main-text-color);
 }
 
-/*===hero===*/
+/*===header end===*/
+/*===hero studio===*/
 
 .hero {
   background-color: var(--section-background-color);
@@ -84,10 +86,9 @@ body {
   color: var(--dark-background-text-color);
 }
 .modal-button {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--dark-background-text-color);
@@ -100,32 +101,30 @@ body {
   background-color: var(--backlight-color);
 }
 
-/*===features===*/
+/*===hero studio end===*/
+
+/*===features studio===*/
 
 .features-item-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--heading-color);
 }
 
 .features-item-text {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
-/*===team===*/
+/*===features studio end===*/
+
+/*===team studio===*/
 
 .activity-title,
 .team-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
   text-align: center;
   color: var(--heading-color);
 }
@@ -134,45 +133,86 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--heading-color);
 }
 
 .team-member-position {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.19
-letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.19;
 }
+
+/*===team studio end===*/
+
+/*===portfolio filters===*/
+
+.filter-buttons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--heading-color);
+  background-color: var(--portfolio-buttons-backgrount-color);
+  cursor: pointer;
+}
+
+.filter-buttons:hover,
+.filter-buttons:focus {
+  color: var(--dark-background-text-color);
+  background-color: var(--accent-color);
+}
+/*===portfolio filters end===*/
+
+/*===portfolio examples===*/
+.example-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--heading-color);
+}
+
+.example-descr {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--main-text-color);
+}
+
+.abbr {
+  text-transform: uppercase;
+}
+
+/*===portfolio examples end===*/
 
 /*===footer===*/
-.footer{
-background-color: var(--section-background-color);
+
+.footer {
+  background-color: var(--section-background-color);
 }
 
-.logo-studio-dark-background{
-color: var(--dark-background-text-color);
+.logo-studio-dark-background {
+  color: var(--dark-background-text-color);
 }
 
-.address-list-item{
-font-style: normal;
-  }
-  
-.address-link{
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--dark-background-text-color);
+.address-list-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-link {
+  color: var(--dark-background-text-color);
 }
 
 .address-mail-link,
-.address-tel-link{
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--footer-contacts-color);
-
+.address-tel-link {
+  color: var(--footer-contacts-color);
 }
 
+.address-link:hover,
+.address-link:focus,
+.address-mail-link:hover,
+.address-mail-link:focus,
+.address-tel-link:hover,
+.address-tel-link:focus {
+  color: var(--accent-color);
+}
+/*===footer end===*/
