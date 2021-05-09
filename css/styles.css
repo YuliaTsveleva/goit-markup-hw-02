@@ -1,6 +1,6 @@
 :root {
-  --main-font: "Roboto", sans-serif;
-  --logo-font: "Raleway", sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
   --backlight-color: #188ce8;
   --main-text-color: #757575;
@@ -60,6 +60,10 @@ body {
   color: var(--accent-color);
 }
 
+.nav-item .link.current {
+  color: var(--accent-color);
+}
+
 .mail-link,
 .tel-link {
   font-weight: 500;
@@ -86,6 +90,7 @@ body {
   color: var(--dark-background-text-color);
 }
 .modal-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
